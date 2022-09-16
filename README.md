@@ -16,9 +16,9 @@ Build a library management system using Django where an admin can, perform CRUD 
     </tr>
  <tr>
     <td><a href="https://youtu.be/bTsC9o5-tV4">
-    <img src = "https://github.com/kr123Manish/Library-Management-System/blob/main/youtube.gif" style="width:100px"></img></a></td>
+    <img src = "https://github.com/kr123Manish/Library-Management-System/blob/main/youtube.gif" style="width:200px"></img></a></td>
     <td><a href="https://youtu.be/wEl--55Ptwk">
-    <img src = "https://github.com/kr123Manish/Library-Management-System/blob/main/youtube.gif" style="width:100px"></img></a></td>
+    <img src = "https://github.com/kr123Manish/Library-Management-System/blob/main/youtube.gif" style="width:200px"></img></a></td>
  </tr>
 </table>
 
