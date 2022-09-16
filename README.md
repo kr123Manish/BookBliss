@@ -10,5 +10,5 @@ Build a library management system using Django where an admin can, perform CRUD 
 [Click for API demo video](https://youtu.be/bTsC9o5-tV4)
 
 ### Web-App using django.
-[Click for API demo video](https://youtu.be/wEl--55Ptwk)
+[Click for Web-App demo video](https://youtu.be/wEl--55Ptwk)
 
