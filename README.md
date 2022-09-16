@@ -7,10 +7,16 @@ Build a library management system using Django where an admin can, perform CRUD 
 - Get all books
 
 ### API using django Rest framework.
-[Click for API demo video](https://youtu.be/bTsC9o5-tV4)
+<a href="https://youtu.be/bTsC9o5-tV4">Click for Api demo video</a>
+<br>
+<a href="https://youtu.be/bTsC9o5-tV4"><img src = "https://myoctocat.com/assets/images/base-octocat.svg"></img></a>
+
 
 ### Web-App using django.
-[Click for Web-App demo video](https://youtu.be/wEl--55Ptwk)
+<a href="https://youtu.be/wEl--55Ptwk">Click for Web-App demo video</a>
+<br>
+<a href="https://youtu.be/wEl--55Ptwk"><img src = "https://myoctocat.com/assets/images/base-octocat.svg"></img></a>
+
 
 ### Features
 ### Admin Signup:
