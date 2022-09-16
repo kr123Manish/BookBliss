@@ -6,17 +6,21 @@ Build a library management system using Django where an admin can, perform CRUD 
 - Delete a book
 - Get all books
 
-### API using django Rest framework.
-<a href="https://youtu.be/bTsC9o5-tV4">Click for Api demo video</a>
-<br>
-<a href="https://youtu.be/bTsC9o5-tV4"><img src = "https://myoctocat.com/assets/images/base-octocat.svg"></img></a>
-
-
-### Web-App using django.
-<a href="https://youtu.be/wEl--55Ptwk">Click for Web-App demo video</a>
-<br>
-<a href="https://youtu.be/wEl--55Ptwk"><img src = "https://myoctocat.com/assets/images/base-octocat.svg"></img></a>
-
+<table>
+ <tr>
+    <td>API using django Rest framework.<br>
+      <a href="https://youtu.be/bTsC9o5-tV4">Click for the Api demo video</a>
+    </td>
+    <td>Web-App using django.<br>
+      <a href="https://youtu.be/wEl--55Ptwk">Click for the Web-App demo video</a></td>
+    </tr>
+ <tr>
+    <td><a href="https://youtu.be/bTsC9o5-tV4">
+    <img src = "https://github.com/kr123Manish/Library-Management-System/blob/main/youtube.gif" style="width:100px"></img></a></td>
+    <td><a href="https://youtu.be/wEl--55Ptwk">
+    <img src = "https://github.com/kr123Manish/Library-Management-System/blob/main/youtube.gif" style="width:100px"></img></a></td>
+ </tr>
+</table>
 
 ### Features
 ### Admin Signup:
