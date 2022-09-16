@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "5ff5cf19-53c1-4270-a3e4-08637b6ee540",
+		"name": "Library_Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21454657"
+	},
+	"item": [
+		{
+			"name": "admin/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "admin_email",
+							"value": "Bob@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "admin_password",
+							"value": "qwerty1234",
+							"type": "text"
+						},
+						{
+							"key": "admin_name",
+							"value": "Bob",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/admin/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "admin_email",
+							"value": "Bob@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "admin_password",
+							"value": "qwerty1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/admin/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book/newentry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book_id",
+							"value": "R22",
+							"type": "text"
+						},
+						{
+							"key": "book_name",
+							"value": "Rich Dad Poor Dad",
+							"type": "text"
+						},
+						{
+							"key": "book_price",
+							"value": "250",
+							"type": "text"
+						},
+						{
+							"key": "book_author",
+							"value": "Robert T",
+							"type": "text"
+						},
+						{
+							"key": "book_dateOfPublication",
+							"value": "13/1/2002",
+							"type": "text"
+						},
+						{
+							"key": "book_inlanguage",
+							"value": "English",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/book/newentry",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						"newentry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book/retrieveall",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/book/retrieveall",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						"retrieveall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book_id",
+							"value": "R22",
+							"type": "text"
+						},
+						{
+							"key": "book_name",
+							"value": "Rich Dad Poor Dad",
+							"type": "text"
+						},
+						{
+							"key": "book_price",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "book_author",
+							"value": "Robert Kiyosaki",
+							"type": "text"
+						},
+						{
+							"key": "book_dateOfPublication",
+							"value": "3/1/2002",
+							"type": "text"
+						},
+						{
+							"key": "book_inlanguage",
+							"value": "English",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/book/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book/delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book_id",
+							"value": "R22",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/book/delete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book/singlebookInfo?book_id=R22",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book_id",
+							"value": "A21",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/book/singlebookInfo?book_id=R22",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						"singlebookInfo"
+					],
+					"query": [
+						{
+							"key": "book_id",
+							"value": "R22"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

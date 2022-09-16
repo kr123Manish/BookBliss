@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin-Register</title>
+	<link rel="stylesheet" href="{% static 'Admin-style.css' %}">
+	<!-- <link rel="stylesheet" type="text/css" href="Admin-style.css"> -->
+	<!-- for font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@500&display=swap" rel="stylesheet">
+	<!--  -->
+	
+</head>
+<body>
+	<div class="container">
+		
+		<h1>Welcome to Admin Register Page</h1>
+		<form id="form-2" method="post" action="/web/admin/register">
+            {%csrf_token%}
+			<div class="error">
+				{% if detail %}
+                    {{detail.error}}
+				{%endif%}
+			</div>
+			<div class="combo">
+				
+				<fieldset>
+  					<legend>Name*</legend> 
+						<input type="text" name="name" placeholder="*Name" required value={% if detail %}
+						{{detail.name}}
+					{%endif%}>
+				</fieldset>
+			</div>
+            <div class="combo">
+				
+				<fieldset>
+  					<legend>Email*</legend> 
+						<input type="email" name="email" placeholder="*Email" required value={% if detail %}
+						{{detail.email}}
+					{%endif%}>
+				</fieldset>
+			</div>
+			<div class="combo">
+				
+				<fieldset>
+  					<legend>Password*</legend> 
+						<input type="Password" name="password" placeholder="*password" required value={% if detail %}
+						{{detail.password}}
+					{%endif%} id="pass">
+						<img src="{% static 'images/1.svg' %}" class="eye" onclick="myFunction('pass')">
+				</fieldset>
+			</div>
+			<div class="combo">
+				
+				<fieldset>
+  					<legend>Confirm Password*</legend> 
+						<input type="Password" name="confirm_password" placeholder="*confirm-password" required value={% if detail %}
+						    {{detail.confirm_password}}
+					    {%endif%} id="cpass">
+						<img src="{% static 'images/1.svg' %}" class="eye" onclick="myFunction('cpass')">
+				</fieldset>
+			</div>
+			<div class="combo-1">
+				<button name="Register">Register</button>
+			</div>
+				
+		</form>
+		<a href="/">Back to Admin</a>
+	</div>
+	<!-- ==================javascript============= -->
+	<script type="text/javascript">
+		function myFunction(clicked_id) {
+			// alert(clicked_id);
+		  var x = document.getElementById(clicked_id);
+		  if (x.type === "password") {
+		    x.type = "text";
+		  } else {
+		    x.type = "password";
+		  }
+		}
+	</script>
+</body>
+</html>

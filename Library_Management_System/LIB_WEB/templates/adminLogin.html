@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin-login</title>
+	<link rel="stylesheet" href="{% static 'Admin-style.css'%}">
+	<!-- <link rel="stylesheet" type="text/css" href="Admin-style.css"> -->
+	<!-- for font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@500&display=swap" rel="stylesheet">
+	<!--  -->
+</head>
+<body>
+	<div class="container">
+		
+		<h1>Welcome to Admin Page</h1>
+		
+		<form id="form-1" method="post">
+            {% csrf_token %}
+			<div class="error">
+				{% if detail %}
+                    {{detail.error}}
+				{%endif%}
+
+			</div>
+			<div class="combo">
+				<fieldset>
+  					<legend>Email*</legend> 
+						<input type="email" name="email" placeholder=" email" required value="{% if detail %}
+						{{detail.email}}
+					{%endif%}">
+				</fieldset>
+			</div>
+			<div class="combo">
+				
+				<fieldset>
+  					<legend>Password*</legend> 
+
+						<input type="Password" name="password" placeholder="password" required id="pass" value={% if detail %}
+						{{detail.password}}
+					{%endif%}>
+						<img src="{% static 'images/1.svg' %}" class="eye" onclick="myFunction()">
+				</fieldset>
+			</div>
+			<div class="combo-1">
+				<button name="login">Login</button>
+			</div>
+				
+		</form>
+
+		
+		<a href="/web/admin/register">Add Admin</a>
+		<a href="/web/student/bookview"><strong>Student view</strong></a>
+	</div>
+	<!-- ========javascript========== -->
+	<script type="text/javascript">
+		function myFunction() {
+			// alert("Ready");
+		  var x = document.getElementById("pass");
+		  if (x.type === "password") {
+		    x.type = "text";
+		  } else {
+		    x.type = "password";
+		  }
+		}
+	</script>
+</body>
+</html>
+</body>
+</html>
